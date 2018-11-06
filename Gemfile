@@ -4,3 +4,8 @@ source "https://rubygems.org"
 gem 'pry' # for debugging
 gem 'pg', '~> 0.18.4'
 gem 'activerecord'
+
+
+@sum = Store.sum
+
+p @sum
