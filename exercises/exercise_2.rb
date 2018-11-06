@@ -5,3 +5,14 @@ puts "Exercise 2"
 puts "----------"
 
 # Your code goes here ...
+
+
+@store1 = Store.find(1)
+@store2 = Store.find(2)
+
+p @store1
+p @store2
+
+@store1.update(name: 'Kitsilano')
+
+p @store1
