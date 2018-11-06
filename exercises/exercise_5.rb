@@ -11,3 +11,11 @@ puts "----------"
 @sum = Store.sum(:annual_revenue)
 
 puts "The combined annual revenue for all stores in $#{@sum}"
+
+@average = (Store.sum(:annual_revenue)/Store.sum(:id)).round(2)
+
+puts "The average annual revenue for each store is $#{@average}"
+
+@mill =Store.where("annual_revenue >= ?", 1000000).count
+
+puts "There are #{@mill} stores that are generating $1000000 or more in sales "
